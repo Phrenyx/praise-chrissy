@@ -5,6 +5,10 @@ body {
     overflow: hidden;
 }
 
+h1 {
+    text-align: center;
+}
+
 .primary {
     color: #BD081C;
 }
@@ -62,20 +66,45 @@ span.light {
     background: url(https://cssanimation.rocks/images/posts/steps/heart.png) no-repeat;
     background-position: 0 0;
     cursor: pointer;
-  }
+}
 
-  .heart:hover {
+.heart:hover {
     background-position: -2800px 0;
     transition: background 1s steps(28);
     animation: fave-heart 1s steps(28);
-  }
+}
 
-  @keyframes fave-heart {
+@media (max-width: 768px) {  
+    h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .center-container {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: 200px;
+        margin-top: -100px;
+        width: 350px;
+        margin-left: -175px;
+    }
+
+    span.light {
+        text-align: center;
+        display: block;
+        margin-top: 75px;
+        font-size: 11px;
+        font-weight: 800;
+    }
+}
+
+@keyframes fave-heart {
     0% {
-      background-position: 0 0;
+        background-position: 0 0;
     }
     100% {
-      background-position: -2800px 0;
+        background-position: -2800px 0;
     }
-  }
+}
   

@@ -1,8 +1,8 @@
 const praiseList = [
-  'Praise the almighty chrissy UwU',
-  'Praise the most beautiful chrissy OwO',
-  'Praise the most intelligent chrissy ÒwÓ',
-  'Sending chrissy positive vibes OwO'
+  'Praise the almighty Nezumia UwU',
+  'Praise the most beautiful Nezumia OwO',
+  'Praise the most intelligent Nezumia ÒwÓ',
+  'Sending Nezumia positive vibes OwO'
 ];
 
 document.getElementById("praise").addEventListener("click", praiseHer);
@@ -19,7 +19,7 @@ function praiseHer() {
 function triggerSweetAlert(text) {
   Swal.fire({
     text: text,
-    confirmButtonText: 'Praise the Chrissy!'
+    confirmButtonText: 'Praise the Nezumia!'
   })
 }
 
