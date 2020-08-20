@@ -2,6 +2,7 @@ body {
     font-family: 'Indie Flower', sans-serif;
     background: #f6f3f1;
     font-size: 14px;
+    overflow: hidden;
 }
 
 .primary {
@@ -39,13 +40,16 @@ span.light {
     display: block;
     margin-top: 55px;
     font-size: 11px;
+    font-weight: 800;
 }
 
 .praise-counter {
     position: absolute;
-    bottom: 1px;
+    bottom: 20px;
     text-align: center;
     width: 100%;
+    font-size: 20px;
+    font-weight: 800;
 }
 
 .heart {
@@ -60,7 +64,7 @@ span.light {
     cursor: pointer;
   }
 
-  .heart.hover {
+  .heart:hover {
     background-position: -2800px 0;
     transition: background 1s steps(28);
     animation: fave-heart 1s steps(28);
